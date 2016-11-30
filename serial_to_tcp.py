@@ -10,7 +10,7 @@ to the remote host/port and relays data back and forth.  If either
 the COM port or the socket is closed, it restarts and waits for a
 new connection on the COM port.
 Options:
-  -p, --port=PORT   serial port, a number, defualt = 0 or a device name
+  -p, --port=PORT   serial port, a number, default = 0 or a device name
   -b, --baud=BAUD   baudrate, default 9600
   -r, --rtscts      enable RTS/CTS flow control (default off)
   -x, --xonxoff     enable software flow control (default off)
@@ -166,7 +166,7 @@ if __name__ == '__main__':
             try:
                 baudrate = int(a)
             except ValueError:
-                raise ValueError, "Baudrate must be a integer number"
+                raise ValueError, "Baud rate must be a integer number"
         elif o in ("-r", "--rtscts"):
             rtscts = True
         elif o in ("-x", "--xonxoff"):
