@@ -3,7 +3,7 @@
 # based on tcp_serial_redirect.py from pyserial
 # http://pyserial.sourceforge.net/
 
-"""USAGE: serial_tcp_redirect.py [options]
+"""USAGE: serial_to_tcp.py [options]
 Simple Serial to Network (TCP/IP) redirector.
 This redirector waits for data from the serial port, then connects
 to the remote host/port and relays data back and forth.  If either
@@ -25,7 +25,7 @@ import sys, os, threading, getopt, socket
 try:
     import serial
 except:
-    print "Running serial_tcp_redirect requries pyserial"
+    print "Running serial_to_serial requries pyserial"
     print "available at http://pyserial.sourceforge.net/"
     sys.exit(1)
 
