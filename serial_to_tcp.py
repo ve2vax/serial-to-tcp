@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# based on tcp_serial_redirect.py from pyserial
+# based on serial_to_tcp.py from pyserial
 # http://pyserial.sourceforge.net/
 
 """USAGE: serial_to_tcp.py [options]
@@ -25,7 +25,7 @@ import sys, os, threading, getopt, socket
 try:
     import serial
 except:
-    print "Running serial_to_serial requries pyserial"
+    print "Running serial_to_tcp requries pyserial"
     print "available at http://pyserial.sourceforge.net/"
     sys.exit(1)
 
